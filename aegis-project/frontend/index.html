@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis - Asteroid Defense Simulator</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aegis: Asteroid Defense Simulator</h1>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <h2>Simulation Controls</h2>
+            <label for="asteroid-select">Select a Near-Earth Asteroid:</label>
+            <select id="asteroid-select">
+                <option>Loading asteroids from NASA...</option>
+            </select>
+            <button id="simulate-button">Simulate Impact</button>
+            <div id="impact-info" class="info-box"></div>
+
+            <div class="mitigation-controls">
+                <h3>Mitigation Strategy</h3>
+                <label for="delta-v-slider">Kinetic Impactor Push: <span id="delta-v-value">0.0</span> m/s</label>
+                <input type="range" id="delta-v-slider" min="0" max="10" step="0.1" value="0">
+                <button id="defend-button">Defend Earth</button>
+                <div id="defend-info" class="info-box"></div>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366; /* Dark blue */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+.controls {
+    flex-basis: 35%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#map {
+    flex-basis: 65%;
+    height: 70vh; /* 70% of the viewport height */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+#simulate-button {
+    background-color: #d9534f; /* Red for danger */
+    margin-top: 20px;
+}
+#simulate-button:hover {
+    background-color: #c9302c;
+}
+
+.info-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.mitigation-controls {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+#delta-v-slider {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#defend-button {
+    background-color: #5cb85c; /* Green for defend */
+}
+#defend-button:hover {
+    background-color: #4cae4c;
+}
+
+#defend-info {
+    font-weight: bold;
+}
